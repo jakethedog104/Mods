@@ -1,0 +1,964 @@
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>
+BetterExceptions Conflict Report</title>
+</head>
+<body style="color: black;background: white;">
+<center>
+
+  <style>
+
+a {
+    color:#fff;
+    font-weight:bold;
+  }
+
+  .header {
+    width:90%;
+    background-color:#df5800;
+    padding: 10px;
+    border-radius:5px;
+	font-family: Arial;
+  }
+
+body {
+    font-family: Arial;
+  }
+  
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  top: 110%;
+  left: 50%;
+  font-size: 11px;
+  margin-left: -253px;
+  z-index: 1;
+  position: absolute;
+  line-break: normal;
+}
+
+.tooltip:hover .tooltiptext {
+  display:block;
+  visibility:visible;
+}
+
+td, th {
+  border: 2px #7c7c7c solid;
+  padding-top:6px;
+  padding-bottom:6px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+td {
+    font-size: 15px;
+    vertical-align: top;
+}
+
+td span {
+    margin: 4px 2px;
+}
+
+th {
+    font-size: 18px;
+    border-top-width: 0;
+	background-color:#ffb652;
+	width: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table {
+  width:100%;
+  border-collapse: collapse;
+  border-top: 2px #7c7c7c solid;
+}
+
+.addon {
+  background-color:#096a00;
+  font-size: 12;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline;
+  vertical-align: top;
+  float:right;
+  position:relative;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.preview .tooltiptext {
+  width: 132px !important;
+  margin-left: -117px !important;
+  
+}
+
+.preview {
+  display: inline;
+  position:relative;
+  cursor: pointer;
+}
+
+.content {
+  text-align: left;
+  width:90%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display:none;
+  overflow:visible;
+}
+
+.contentpad {
+  padding: 10px;
+}
+
+.contentpaderror {
+  padding: 10px;
+  border: 1px #d2d2d2 solid;
+}
+
+.button {
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  min-width:120px;
+}
+
+.secButton {
+	background-color: #b90000;
+	float: right;
+}
+
+.button:hover {
+    background-color: #ff9b20;
+}
+
+.secButton:hover {
+	background-color: #990000
+}
+
+.sectionHeader {
+    background-color: #ff9400;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+</style>
+
+<script type="text/javascript">
+window.addEventListener('load', function () {
+
+var coll = document.getElementsByClassName("collapsible");
+var col2 = document.getElementsByClassName("sub-collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+      content.style.display = "none";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.display = "block";
+    }
+  });
+}
+
+for (i = 0; i < col2.length; i++) {
+  col2[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+		content.style.maxHeight = null;
+		content.style.display = "none";
+    } else {
+      content.style.display = "block";
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+coll = document.getElementsByClassName("expanded");
+
+for (i = 0; i < coll.length; i++) {
+    var content = coll[i].nextElementSibling;
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+
+}, false);
+</script>
+
+  
+<div class='header'><span style='color:#FFF;font-size:50px'>Better Exceptions Conflict Report</span><br><span style="color:#FFF;font-size:20px">v3.11 | Created by <a href='https://TwistedMexi.com' target="_blank">TwistedMexi</a></span>
+<br><br>
+<span style='color:#FFF;font-size:15px;font-weight: bold;'>The following files conflict with each other.<br>As always, if a file is part of a multi-file mod, make sure you remove all of the mod files.</span></div>
+<div style="display: table;justify-content: center;min-width:90%">
+
+<div class='excontainer'>
+  <div class='sectionHeader'>Mod Conflicts</div>
+    <div class="contentpaderror">
+<table style="line-break:anywhere;">
+<thead>
+<tr>
+<th>File A</th>
+<th>File B</th>     
+<th style="min-width: 60px;">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Mods/Scripts/LittleMsSam_LiveInBusiness_Bar.package</td><td>Mods/Scripts/LittleMsSam_LiveInBusiness!_Addon_LotChallenges.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:00BF1ADB:8AC2EC2C13B2777B</span></td><td><span>DAT Resource</span></td></tr><tr><td><span>B8BF1A63:00000000:8AC2EC2C13B2777B</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/LittleMsSam_LiveInBusiness_Cafe.package</td><td>Mods/Scripts/LittleMsSam_LiveInBusiness!_Addon_LotChallenges.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>B8BF1A63:00000000:829DE4E57BB0AE3B</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>545AC67A:00BF1ADB:829DE4E57BB0AE3B</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/LittleMsSam_LiveInBusiness_Club.package</td><td>Mods/Scripts/LittleMsSam_LiveInBusiness!_Addon_LotChallenges.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:00BF1ADB:82AEF7E57BBF41B8</span></td><td><span>DAT Resource</span></td></tr><tr><td><span>B8BF1A63:00000000:82AEF7E57BBF41B8</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/LittleMsSam_LiveInBusiness_Daycare.package</td><td>Mods/Scripts/LittleMsSam_LiveInBusiness!_Addon_LotChallenges.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:00BF1ADB:908AE0BD3262B4E5</span></td><td><span>DAT Resource</span></td></tr><tr><td><span>B8BF1A63:00000000:908AE0BD3262B4E5</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/LittleMsSam_LiveInBusiness_Gym.package</td><td>Mods/Scripts/LittleMsSam_LiveInBusiness!_Addon_LotChallenges.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:00BF1ADB:8AB8E02C13AA0E4D</span></td><td><span>DAT Resource</span></td></tr><tr><td><span>B8BF1A63:00000000:8AB8E02C13AA0E4D</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/LittleMsSam_LiveInBusiness_PetDaycare.package</td><td>Mods/Scripts/LittleMsSam_LiveInBusiness!_Addon_LotChallenges.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:00BF1ADB:913BF8E9F516E054</span></td><td><span>DAT Resource</span></td></tr><tr><td><span>B8BF1A63:00000000:913BF8E9F516E054</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/LittleMsSam_LiveInBusiness_Store.package</td><td>Mods/Scripts/LittleMsSam_LiveInBusiness!_Addon_LotChallenges.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:00BF1ADB:F35AE57E3D268A11</span></td><td><span>DAT Resource</span></td></tr><tr><td><span>B8BF1A63:00000000:F35AE57E3D268A11</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/LittleMsSam_LiveInBusiness_VetClinic.package</td><td>Mods/Scripts/LittleMsSam_LiveInBusiness!_Addon_LotChallenges.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>B8BF1A63:00000000:8AEBF02C13D5829D</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>545AC67A:00BF1ADB:8AEBF02C13D5829D</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/LittleMsSam_SimDaDatingApp.package</td><td>Mods/Scripts/!LittleMsSam_SimDaDatingApp_NoFWord.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:00000000:006CA1F15738D2F1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:00000000:016CA1F15738D2F1</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Scripts/Zerbu - More Selectable Icons.package</td><td>Mods/TraditionHoliday/LittleMsSam_MoreHolidayIcons.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:006CA304:0C39BF0D079C8CEF</span></td><td><span>DAT Resource</span></td></tr><tr><td><span>545AC67A:006CA304:FD72BAB73485CDFD</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Traits/LittleMsSam_EntranceFeeLotTrait.package</td><td>Mods/Traits/LittleMsSam_EntranceFeeLotTrait!_Addon_LotChallenge.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>545AC67A:00BF1ADB:A3760FC6DD26D262</span></td><td><span>DAT Resource</span></td></tr><tr><td><span>B8BF1A63:00000000:A3760FC6DD26D262</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/Traits/LittleMsSam_GenderAndMoreLotTraits.package</td><td>Mods/Traits/LittleMsSam_GenderAndMoreLotTraits!_Addon_LotChallenge.package <div class="addon tooltip">INTENTIONAL OVERRIDE?<span class="tooltiptext">While these files technically conflict, the creator may have intentionally done this as an optional addon/override.<br>If both files are from the same creator, this is likely the case.</span></div></td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>B8BF1A63:00000000:D75B944FB937BC89</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 3</span></span></td></tr><tr><td><span>545AC67A:00BF1ADB:D75B944FB937BC89</span></td><td><span>DAT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/BiscuitPrideFlagQueerVer_OVERRIDE.package</td><td>Mods/UnUnified/BB-Label/YetMorePride.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>01D10F34:00000000:A04B537E7D695681</span></td><td><span>Base Resource</span></td></tr><tr><td><span>01D10F34:00010000:A04B537E7D695681</span></td><td><span>Base Resource</span></td></tr><tr><td><span>01D10F34:00010001:A04B537E7D695681</span></td><td><span>Base Resource</span></td></tr><tr><td><span>01661233:00000000:A04B537E7D695681</span></td><td><span>Base Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036374</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036375</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036376</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036377</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036378</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036379</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:000000000003637B</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:000000000003637C</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:000000000003637D</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:000000000003637E</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:000000000003637F</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036380</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036381</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036382</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036383</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000036384</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000037F85</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:0000000000037F86</span></td><td><span>ObjectCatalog Resource</span></td></tr><tr><td><span>319E4F1D:00000000:000000000003935D</span></td><td><span>ObjectCatalog Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon canapé 1 v2.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:00000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:02000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:03000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:04000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:05000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:06000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:07000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:08000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:11000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:13000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:15000000828C0A82</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon candle 2.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:000000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:020000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:030000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:040000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:050000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:060000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:070000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:080000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B0000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C0000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D0000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E0000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F0000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:110000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:120000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:130000009C78C544</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:150000009C78C544</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon Pediment1.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:000000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:020000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:030000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:040000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:050000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:060000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:070000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:080000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B0000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C0000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D0000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E0000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F0000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:110000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:120000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:130000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:150000000EBBCC00</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon salon center.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:004BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:024BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:034BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:044BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:054BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:064BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:074BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:084BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B4BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C4BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D4BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E4BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F4BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:114BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:124BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:134BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:154BD5749EB0B7DC</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit trianon salon chair1 v2.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:00000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:02000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:03000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:04000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:05000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:06000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:07000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:08000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:11000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:13000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:15000000A59C24A9</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit trianon salon chair1.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:000000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:020000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:030000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:040000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:050000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:060000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:070000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:080000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B0000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C0000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D0000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E0000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F0000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:110000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:120000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:130000007033300B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:150000007033300B</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit trianon salon chair2.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:0000000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0200000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0300000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0400000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0500000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0600000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0700000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0800000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B00000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C00000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D00000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E00000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F00000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1100000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1200000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1300000001E32851</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1500000001E32851</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon stone wall.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:004A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:024A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:034A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:044A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:054A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:064A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:074A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:084A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B4A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C4A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D4A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E4A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F4A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:114A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:124A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:134A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:154A737AA6309A7B</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon canapé 1.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:000000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:020000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:030000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:040000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:050000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:060000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:070000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:080000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B0000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C0000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D0000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E0000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F0000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:110000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:120000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:130000009806C35F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:150000009806C35F</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon door3 3x1.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:000000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:020000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:030000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:040000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:050000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:060000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:070000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:080000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B0000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C0000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D0000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E0000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F0000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:110000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:120000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:130000001C67688A</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:150000001C67688A</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon door3 v2 3x1.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:00000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:02000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:03000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:04000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:05000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:06000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:07000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:08000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:11000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:13000000839749E0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:15000000839749E0</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon harpsichord.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:00000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:02000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:03000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:04000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:05000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:06000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:07000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:08000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:11000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:13000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:15000000C93882F8</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit trianon salon chair2 v2.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:0000000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0200000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0300000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0400000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0500000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0600000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0700000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0800000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B00000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C00000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D00000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E00000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F00000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1100000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1200000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1300000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1500000059BF98F0</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon salon left.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:00AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:02AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:03AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:04AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:05AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:06AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:07AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:08AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0BAA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0CAA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0DAA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0EAA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0FAA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:11AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:13AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:15AA203D075A0224</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon salon right.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:006D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:026D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:036D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:046D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:056D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:066D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:076D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:086D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B6D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C6D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D6D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E6D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F6D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:116D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:126D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:136D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:156D6D4D0F0CCE89</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon wall lamp 1.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:000000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:020000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:030000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:040000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:050000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:060000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:070000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:080000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B0000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C0000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D0000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E0000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F0000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:110000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:120000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:130000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:150000007BABB7FC</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon wall lamp 2.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:0000000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0200000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0300000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0400000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0500000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0600000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0700000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0800000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B00000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C00000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D00000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E00000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F00000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1100000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1200000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1300000040DC7644</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1500000040DC7644</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon wall lamp 3.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:00000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:02000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:03000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:04000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:05000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:06000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:07000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:08000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:11000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:13000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:15000000CE56DE8D</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon window 1 2x1.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:00000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:02000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:03000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:04000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:05000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:06000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:07000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:08000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:11000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:13000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:15000000B3BCB5B9</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Petit Trianon windowsill.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/Felixandre November 2017/Felixandre_November_2017.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:0000000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0200000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0300000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0400000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0500000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0600000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0700000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0800000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B00000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C00000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D00000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E00000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F00000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1100000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1200000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1300000057DE408F</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:1500000057DE408F</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/F&amp;H/The BAFROOM/BAFROOM_Siptique_3Wick_Candle.package</td><td>Mods/UnUnified/BB-Label/F&amp;H/The BAFROOM/BAFROOM_Siptique_Candle.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:000000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:020000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:030000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:040000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:050000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:060000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:070000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:080000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B0000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C0000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D0000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E0000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F0000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:110000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:120000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:130000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:150000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:010000003E5FAC36</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/Simsi45/Simsi45_More_Slots/BASEGAME_Simsi45_Bookshelves_Slot_Fix.package</td><td>Mods/UnUnified/BB-Label/Simsi45/Recolors/Recolors - Tabula Rasa Bookshelf.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>01661233:00000000:0ECF5CD495E00404</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/Simsi45/Simsi45_More_Slots/BASEGAME_Simsi45_Bookshelves_Slot_Fix.package</td><td>Mods/UnUnified/BB-Label/Simsi45/Recolors/Recolors - Tabula Rasa Wall-Mounted Bookshelves.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>01661233:00000000:6441BFB944C9932C</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/Simsi45/Simsi45_More_Slots/SEASONS_HUTCHES_FIX.package</td><td>Mods/Scripts/LittleMsSam_ChangeOutfitCoatRackHanger.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>C0DB5AE7:00000000:000000000002F5ED</span></td><td><span>ObjectDefinition Resource</span></td></tr><tr><td><span>C0DB5AE7:00000000:000000000002F5EE</span></td><td><span>ObjectDefinition Resource</span></td></tr><tr><td><span>C0DB5AE7:00000000:000000000002F5EF</span></td><td><span>ObjectDefinition Resource</span></td></tr><tr><td><span>C0DB5AE7:00000000:000000000002F5F0</span></td><td><span>ObjectDefinition Resource</span></td></tr><tr><td><span>C0DB5AE7:00000000:000000000002F5F1</span></td><td><span>ObjectDefinition Resource</span></td></tr><tr><td><span>C0DB5AE7:00000000:000000000002F5F2</span></td><td><span>ObjectDefinition Resource</span></td></tr><tr><td><span>C0DB5AE7:00000000:000000000002F5F3</span></td><td><span>ObjectDefinition Resource</span></td></tr><tr><td><span>C0DB5AE7:00000000:000000000002F5F4</span></td><td><span>ObjectDefinition Resource</span></td></tr><tr><td><span>C0DB5AE7:00000000:000000000002F5F5</span></td><td><span>ObjectDefinition Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SIXAM/SIXAMcc_HotelBedroom-CCPack_v4/SIXAMcc_HotelBedroom-deco-switch-single.package</td><td>Mods/BuildBuy/FnQoL/SIXAMcc_HomeImprovement-Switch-Single-Model-11.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>B61DE6B4:00000000:B265FB0BD7153F16</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 18</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/RVSN_UpliftingElevatorPortal_NoAnimation_1_0_1.package</td><td>Mods/BuildBuy/FnQoL/RVSN_UpliftingElevatorPortals_1_0_1/RVSN_UpliftingElevatorPortal_NoAnimation.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>220557DA:80000000:00000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:02000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:03000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:04000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:05000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:06000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:07000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:08000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0B000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0C000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0D000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0E000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:0F000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:11000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:12000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:13000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:15000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr><tr><td><span>220557DA:80000000:01000000DC3773C1</span></td><td><span>StringTable Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/SYB-Aquarium set/SYB_Aquarium_Floor_4x2.package</td><td>Mods/UnUnified/BB-Label/SYB/SYB-Aquarium set/SYB_Aquarium_Hexagonal_tank.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>B61DE6B4:00000000:8A503818B14297EC</span></td><td><span>XML Resource</span><span class="preview tooltip">🔎<span class="tooltiptext">First difference occurs on<br>line 33</span></span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Pink_Peonies.package</td><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Heart_trim.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>02019972:009EE59A:2E9E2E8BB0780B4D</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Pink_Peonies.package</td><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_White_Roses.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>02019972:009EE59A:2E9E2E8BB0780B4D</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Pink_Peonies.package</td><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Pink_Roses.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>02019972:009EE59A:2E9E2E8BB0780B4D</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Pink_Peonies.package</td><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Purple_Wisteria.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>02019972:009EE59A:2E9E2E8BB0780B4D</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Spring_Flowers.package</td><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Pink_Peonies.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>02019972:009EE59A:2E9E2E8BB0780B4D</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_White_Peonies.package</td><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Pink_Peonies.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>02019972:009EE59A:2E9E2E8BB0780B4D</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_White_Wisteria.package</td><td>Mods/UnUnified/BB-Label/SYB/SYB_Printemps/SYB_Printemps_Decotrim_Pink_Peonies.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>02019972:009EE59A:2E9E2E8BB0780B4D</span></td><td><span>Base Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    <tr><td>Mods/UnUnified/CAS/Greenllamas/The Greenhouse Collection/[greenllamas] GREENHOUSE_Violet_V-Neck_Patterns.package</td><td>Mods/UnUnified/CAS/Greenllamas/The Greenhouse Collection/[greenllamas] GREENHOUSE_Olea_Offshoulder_Patterns.package</td><td><button class="button secButton sub-collapsible">Show Conflicts</button><div class="content" style="width:max-content">
+    <div class="contentpad">
+    <table style="line-break:normal;white-space:nowrap;">
+        <thead>
+        <tr>
+        <th>Conflicting Resource</th><th>Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><span>BA856C78:80000000:A3D3EFEEE89768B6</span></td><td><span>DXT Resource</span></td></tr>
+        </tbody>
+    </table>
+    </div>
+    </div></td></tr>
+
+    
+</tbody>
+</table>
+    </div>
+</div>
+<br>
+<span style="color:#000;font-size:20px">Found 48 conflicting mods out of 7183 total files in 75.98 seconds.</span>
+</div>
+</center>
+</body>
+</html>
