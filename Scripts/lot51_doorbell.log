@@ -1,0 +1,14 @@
+[Lot 51] Smart Doorbell; version: 2.4; mode: development;
+If you are experiencing any issues with this mod, please go to https://lot51.cc and report your error with this log. Feel free to upload through the website, or join the Discord help channel.
+[Config] loading path: /Users/jwesterback/Documents/Electronic Arts/The Sims 4/Mods/Scripts/lot51_doorbell.dat
+[Config] init
+DEV MODE
+[VisualRingService.load] call
+[VisualRingService.load] No data found for current zone
+[VisualRingService.reset] call
+[VisualRingService.load] call
+[VisualRingService.load] No data found for current zone
+[VisualRingService.reset] call
+[VisualRingService.load] call
+[VisualRingService.load] No data found for current zone
+[VisualRingService.reset] call

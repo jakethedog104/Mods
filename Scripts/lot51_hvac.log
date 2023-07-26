@@ -1,0 +1,17 @@
+[INFO] [Lot 51] PlumbBros; version: 1.6; mode: development; library: 1.11-beta
+[INFO] If you are experiencing any issues with this mod, please go to https://lot51.cc and report your error with this log. Feel free to upload through the website, or join the Discord help channel.
+[DEBUG] [WorkOrderService] init
+[INFO] [HeatingCoolingService] init
+[INFO] [HeatingCoolingIntegrationManifest] loaded PlumBros by Lot 51 (lot51:HeatingCoolingIntegrationManifest)
+[DEBUG] [HeatingCoolingIntegrationManager] Processing <class 'sims4.tuning.instances.lot51:HeatingCoolingIntegrationManifest'>
+[DEBUG] found save based config household: Household 4104905993 (342574008500420640): Lexi Harp
+[DEBUG] opted in: False -> False
+[DEBUG] found save based config household: Household 4104905993 (342574008500420640): Lexi Harp
+[DEBUG] opted in: False -> False
+[DEBUG] found save based config household: Household 4104905993 (342574008500420640): Lexi Harp
+[DEBUG] opted in: False -> False
+[DEBUG] found save based config household: Household 4104905993 (342574008500420640): Lexi Harp
+[DEBUG] found save based config household: Household 4104905993 (342574008500420640): Lexi Harp
+[DEBUG] opted in: False -> False
+[DEBUG] opted in: False -> False
+[DEBUG] found save based config household: Household 4104905993 (342574008500420640): Lexi Harp

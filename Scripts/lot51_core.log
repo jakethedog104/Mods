@@ -1,0 +1,24 @@
+[INFO] [Lot 51] Core Library; version: 1.11-beta; mode: development; library: 1.11-beta
+[INFO] If you are experiencing any issues with this mod, please go to https://lot51.cc and report your error with this log. Feel free to upload through the website, or join the Discord help channel.
+[INFO] [TuningInjector] loaded Simzlink (TV) by Lot 51 (lot51:Simzlink_IPTV_Injector); minimum core version: 1.5;
+[INFO] [TuningInjector] loaded Sunrise by Lot 51 (lot51:Sunrise_Injector); minimum core version: 1.5;
+[INFO] [TuningInjector] loaded Simzlink by Lot 51 (lot51:SimzlinkInjector); minimum core version: 1.5;
+[INFO] [ModManifest] loaded Sunrise by Lot 51 (lot51:Sunrise_ModManifest); version: 1.2;
+[INFO] [TuningInjector] loaded PlumbBros by Lot 51 (lot51:HVAC_Injector); minimum core version: 1.5;
+[INFO] [ModManifest] loaded PlumbBros by Lot 51 (lot51:HVAC_ModManifest); version: 1.6;
+[INFO] [TuningInjector] starting snippet injections: lot51:HVAC_Injector
+[INFO] [TuningInjector] starting snippet injections: lot51:Simzlink_IPTV_Injector
+[INFO] [TuningInjector] starting snippet injections: lot51:SimzlinkInjector
+[INFO] [TuningInjector] starting snippet injections: lot51:Sunrise_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:HVAC_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:Simzlink_IPTV_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:SimzlinkInjector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:Sunrise_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:HVAC_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:Simzlink_IPTV_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:SimzlinkInjector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:Sunrise_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:HVAC_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:Simzlink_IPTV_Injector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:SimzlinkInjector
+[INFO] [TuningInjector] starting delayed snippet injections: lot51:Sunrise_Injector

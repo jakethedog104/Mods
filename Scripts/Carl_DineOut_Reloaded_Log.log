@@ -1,0 +1,110 @@
+WRITING CONFIG FILE
+Initializing Dine Out Reloaded v3.3
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+(BuffTest(apply_whitelist_on_individual_basis=True, blacklist=frozenset({<class 'sims4.tuning.instances.buff_LifeSkills_Autonomy_Responsibility_VeryPositive'>, <class 'sims4.tuning.instances.buffs_MakeAMess_Cooldown'>}), blacklist_tags=frozenset(), subject=ParticipantType.Actor, tooltip=None, whitelist=None, whitelist_tags=None),)
+80.0
+_sims4_collections.frozendict({<class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_BadDate_AngrySim'>: <class 'sims4.tuning.instances.restaurant_Roles_Diner_EatFood'>})
+Set game breaker for <class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_BadDate_AngrySim'>
+80.0
+_sims4_collections.frozendict({<class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_BadDate_FlirtySim'>: <class 'sims4.tuning.instances.restaurant_Roles_Diner_EatFood'>})
+Set game breaker for <class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_BadDate_FlirtySim'>
+80.0
+_sims4_collections.frozendict({<class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_Critic'>: <class 'sims4.tuning.instances.restaurant_Roles_Diner_EatFood_Critic'>})
+Set game breaker for <class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_Critic'>
+80.0
+_sims4_collections.frozendict({<class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_EarlyBirds'>: <class 'sims4.tuning.instances.restaurant_Roles_Diner_EatFood'>})
+Set game breaker for <class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_EarlyBirds'>
+80.0
+_sims4_collections.frozendict({<class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_FamilyMeal_Child'>: <class 'sims4.tuning.instances.restaurant_Roles_Diner_EatFood'>})
+Set game breaker for <class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_FamilyMeal_Child'>
+80.0
+_sims4_collections.frozendict({<class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_FamilyMeal_Parent'>: <class 'sims4.tuning.instances.restaurant_Roles_Diner_EatFood'>})
+Set game breaker for <class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_FamilyMeal_Parent'>
+80.0
+_sims4_collections.frozendict({<class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_HappyDate'>: <class 'sims4.tuning.instances.restaurant_Roles_Diner_EatFood'>})
+Set game breaker for <class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_NPC_HappyDate'>
+80.0
+_sims4_collections.frozendict({<class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_Standard'>: <class 'sims4.tuning.instances.restaurant_Roles_Diner_EatFood'>})
+Set game breaker for <class 'sims4.tuning.instances.jobs_RestaurantDiner_Sub_Standard'>
+OPENING DineOut Reloaded Took3.8199424743652344
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Rarahu Hoapili is initiating Sim
+Lesley Caudill is initiating Sim
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.
+Testing take seat.
+Testing take order.
+Testing take order.

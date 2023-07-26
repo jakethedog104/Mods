@@ -1,0 +1,29 @@
+[INFO] [Lot 51] Simzlink; version: 1.4.4; mode: development; library: 1.11-beta
+[INFO] If you are experiencing any issues with this mod, please go to https://lot51.cc and report your error with this log. Feel free to upload through the website, or join the Discord help channel.
+[DEBUG] [WorkOrderService] init
+[DEBUG] [SimzlinkService] init
+[INFO] [SimzlinkServiceSnippet] snippet loaded, version: 1.4.4
+[INFO] [SimzlinkIntegrationManifest] Simzlink by Lot 51
+[INFO] [SimzlinkIntegrationManifest] Simzlink Streaming by Lot 51
+[INFO] [SimzlinkIntegrationManifest] PlumbBros by Lot 51
+[DEBUG] [SimzlinkIntegration] Processing <class 'sims4.tuning.instances.lot51:HVAC_SimzlinkIntegrationManifest'>
+[DEBUG] [SimzlinkIntegration] Processing <class 'sims4.tuning.instances.lot51:SimzlinkIntegrationManifest'>
+[DEBUG] [SimzlinkIntegration] Processing <class 'sims4.tuning.instances.lot51:SimzlinkIntegrationManifest_Streaming'>
+[DEBUG] [start] not running startup effects
+[DEBUG] [on_build_buy_exit]
+[DEBUG] opted out: False -> False
+[DEBUG] [on_build_buy_exit]
+[DEBUG] opted out: False -> False
+[DEBUG] [on_build_buy_exit]
+[DEBUG] opted out: False -> False
+[DEBUG] [on_zone_destroy]
+[DEBUG] [start] always commercial zone, setting to commercial mode
+[DEBUG] set zone mode: ZoneMode.COMMERCIAL
+[DEBUG] [start] not running startup effects
+[DEBUG] [on_zone_destroy]
+[DEBUG] [start] not running startup effects
+[DEBUG] [on_build_buy_exit]
+[DEBUG] opted out: False -> False
+[DEBUG] [on_build_buy_exit]
+[DEBUG] opted out: False -> False
+[DEBUG] [on_zone_destroy]

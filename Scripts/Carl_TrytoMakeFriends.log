@@ -1,0 +1,113 @@
+Initiating makefriends class
+Initiated makefriends class
+Initiating makefriends class
+Initiated makefriends class
+Set friendship track score to: 62.930789947509766
+Lesley Caudill running carl:trytomakefriends:1399 on Rarahu Hoapili  (guaranteed) autonomy
+Lesley Caudill running seating_Sit:1114 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[10] autonomy
+Trying another. <class 'sims4.tuning.instances.mixer_social_Apologize_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Casual'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_BegForgiveness_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Casual'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_Flatter_targeted_Friendly_alwaysOn'>
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_Flatter_targeted_Friendly_alwaysOn'> on Rarahu Hoapili; id:1401, sim:Lesley Caudill>>
+Interaction <class 'sims4.tuning.instances.mixer_social_Flatter_targeted_Friendly_alwaysOn'> on Rarahu Hoapili; id:1401, sim:Lesley Caudill is interaction of interest
+Set friendship track score to: 62.930789947509766
+Rarahu Hoapili running seating_Sit:1049 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[11] autonomy
+Rarahu Hoapili running stereo_Listen:1383 on television_Entertainment_Center_Wall:0x04c111309b7500a8  (guaranteed) autonomy
+Rarahu Hoapili running carl:trytomakefriends:1400 on Lesley Caudill  (guaranteed) autonomy
+Lesley Caudill running carl:trytomakefriends:1399 on Rarahu Hoapili  (guaranteed) autonomy
+Lesley Caudill running seating_Sit:1114 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[10] autonomy
+Interaction <class 'sims4.tuning.instances.mixer_social_Flatter_targeted_Friendly_alwaysOn'> on Rarahu Hoapili; id:1401, sim:Lesley Caudill found in queue.
+Rarahu Hoapili running seating_Sit:1049 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[11] autonomy
+Rarahu Hoapili running stereo_Listen:1383 on television_Entertainment_Center_Wall:0x04c111309b7500a8  (guaranteed) autonomy
+Rarahu Hoapili running carl:trytomakefriends:1400 on Lesley Caudill  (guaranteed) autonomy
+Trying another. <class 'sims4.tuning.instances.mixer_social_BegForgiveness_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Casual'> for Rarahu Hoapili does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_Apologize_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Casual'> for Rarahu Hoapili does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'>
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'> on Lesley Caudill; id:1411, sim:Rarahu Hoapili>>
+Interaction <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'> on Lesley Caudill; id:1411, sim:Rarahu Hoapili is interaction of interest
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'> on Lesley Caudill; id:1411, sim:Rarahu Hoapili>>
+Interaction <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'> on Lesley Caudill; id:1411, sim:Rarahu Hoapili is interaction of interest
+Lesley Caudill running carl:trytomakefriends:1399 on Rarahu Hoapili  (guaranteed) autonomy
+Lesley Caudill running seating_Sit:1114 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[10] autonomy
+Trying another. <class 'sims4.tuning.instances.mixer_social_BegForgiveness_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Casual'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_Apologize_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Casual'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'>
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'> on Rarahu Hoapili; id:1413, sim:Lesley Caudill>>
+Interaction <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'> on Rarahu Hoapili; id:1413, sim:Lesley Caudill is interaction of interest
+Lesley Caudill running carl:trytomakefriends:1399 on Rarahu Hoapili  (guaranteed) autonomy
+Lesley Caudill running seating_Sit:1114 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[10] autonomy
+Interaction <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'> on Rarahu Hoapili; id:1413, sim:Lesley Caudill found in queue.
+Trying another. <class 'sims4.tuning.instances.mixer_social_Apologize_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Casual'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_BegForgiveness_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Casual'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_Flatter_targeted_Friendly_alwaysOn'>
+Trying another. <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'>
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'> on Rarahu Hoapili; id:1428, sim:Lesley Caudill>>
+Interaction <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'> on Rarahu Hoapili; id:1428, sim:Lesley Caudill is interaction of interest
+Lesley Caudill running carl:trytomakefriends:1399 on Rarahu Hoapili  (guaranteed) autonomy
+Lesley Caudill running seating_Sit:1114 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[10] autonomy
+Interaction <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'> on Rarahu Hoapili; id:1428, sim:Lesley Caudill found in queue.
+Trying another. <class 'sims4.tuning.instances.mixer_social_BegForgiveness_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Friendship_Friendly'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_Apologize_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Friendship_Friendly'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_Flatter_targeted_Friendly_alwaysOn'>
+Trying another. <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'>
+Trying another. <class 'sims4.tuning.instances.mixer_social_TellEngagingStory_group_Friendly_MiddleScore'>
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_TellEngagingStory_group_Friendly_MiddleScore'> on Rarahu Hoapili; id:1604, sim:Lesley Caudill>>
+Interaction <class 'sims4.tuning.instances.mixer_social_TellEngagingStory_group_Friendly_MiddleScore'> on Rarahu Hoapili; id:1604, sim:Lesley Caudill is interaction of interest
+Lesley Caudill running carl:trytomakefriends:1399 on Rarahu Hoapili autonomy
+Lesley Caudill running seating_Sit:1114 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[10] autonomy
+Interaction <class 'sims4.tuning.instances.mixer_social_TellEngagingStory_group_Friendly_MiddleScore'> on Rarahu Hoapili; id:1604, sim:Lesley Caudill found in queue.
+Trying another. <class 'sims4.tuning.instances.mixer_social_BegForgiveness_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Friendship_Friendly'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_Apologize_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Friendship_Friendly'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'>
+Trying another. <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'>
+Has brightened already
+Trying another. <class 'sims4.tuning.instances.mixer_social_Flatter_targeted_Friendly_alwaysOn'>
+Trying another. <class 'sims4.tuning.instances.mixer_social_TalkAboutCooking_targeted_Friendly_alwaysOn_skills'>
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_TalkAboutCooking_targeted_Friendly_alwaysOn_skills'> on Rarahu Hoapili; id:1902, sim:Lesley Caudill>>
+Interaction <class 'sims4.tuning.instances.mixer_social_TalkAboutCooking_targeted_Friendly_alwaysOn_skills'> on Rarahu Hoapili; id:1902, sim:Lesley Caudill is interaction of interest
+Lesley Caudill running carl:trytomakefriends:1399 on Rarahu Hoapili autonomy
+Lesley Caudill running seating_Sit:1114 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[10] autonomy
+Lesley Caudill running sim_Chat:1903 on Rarahu Hoapili  (guaranteed) autonomy
+Interaction <class 'sims4.tuning.instances.mixer_social_TalkAboutCooking_targeted_Friendly_alwaysOn_skills'> on Rarahu Hoapili; id:1902, sim:Lesley Caudill found in queue.
+Interaction <class 'sims4.tuning.instances.mixer_social_SitIntimate_WhisperSweetNothings_targeted_romance_middleScore'> on Rarahu Hoapili; id:1966, sim:Lesley Caudill found in queue.
+Rarahu Hoapili running stereo_Listen:1383 on television_Entertainment_Center_Wall:0x04c111309b7500a8  (guaranteed) autonomy
+Rarahu Hoapili running carl:trytomakefriends:1400 on Lesley Caudill autonomy
+Rarahu Hoapili running sim_Chat:1805 on Lesley Caudill  (guaranteed) autonomy
+Rarahu Hoapili running seating_Sit:1049 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[11] autonomy
+Trying another. <class 'sims4.tuning.instances.mixer_social_Apologize_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Friendship_Friendly'> for Rarahu Hoapili does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_BegForgiveness_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Friendship_Friendly'> for Rarahu Hoapili does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'>
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'> on Lesley Caudill; id:1990, sim:Rarahu Hoapili>>
+Interaction <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'> on Lesley Caudill; id:1990, sim:Rarahu Hoapili is interaction of interest
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'> on Lesley Caudill; id:1990, sim:Rarahu Hoapili>>
+Interaction <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'> on Lesley Caudill; id:1990, sim:Rarahu Hoapili is interaction of interest
+Lesley Caudill running carl:trytomakefriends:1399 on Rarahu Hoapili autonomy
+Lesley Caudill running seating_Sit:1114 on object_sitSofaC3x1_01_NoRouteUnder:0x04c1113bc5fb0baa[10] autonomy
+Lesley Caudill running sim_Chat:1903 on Rarahu Hoapili  (guaranteed) autonomy
+Lesley Caudill running sofa_BeIntimate:1991 on Rarahu Hoapili  (guaranteed) found in queue.
+Interaction <class 'sims4.tuning.instances.mixer_social_SitIntimate_WhisperSweetNothings_targeted_romance_middleScore'> on Rarahu Hoapili; id:1966, sim:Lesley Caudill found in queue.
+Trying another. <class 'sims4.tuning.instances.mixer_social_BegForgiveness_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Friendship_Friendly'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_Apologize_targeted_friendly_lowScore'>
+<EnqueueResult: <class 'sims4.tuning.instances.relbit_SocialContext_Friendship_Friendly'> for Lesley Caudill does not match required contexts <ExecuteResult: False: (None)>>
+Trying another. <class 'sims4.tuning.instances.mixer_social_BrightenDay_targeted_friendly_emotionSpecific'>
+Has brightened already
+Trying another. <class 'sims4.tuning.instances.mixer_social_Flatter_targeted_Friendly_alwaysOn'>
+Trying another. <class 'sims4.tuning.instances.mixer_social_ComplimentOutfit_targeted_Friendly_alwaysOn_skills'>
+Trying another. <class 'sims4.tuning.instances.mixer_social_DiscussInterests_friendly_STC'>
+<EnqueueResult: True <ExecuteResult: True: (None) - Interaction <class 'sims4.tuning.instances.mixer_social_DiscussInterests_friendly_STC'> on Rarahu Hoapili; id:2014, sim:Lesley Caudill>>
+Interaction <class 'sims4.tuning.instances.mixer_social_DiscussInterests_friendly_STC'> on Rarahu Hoapili; id:2014, sim:Lesley Caudill is interaction of interest
